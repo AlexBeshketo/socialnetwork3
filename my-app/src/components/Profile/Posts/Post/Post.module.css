@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+.item {
+    color: #fcfcfc;
+    margin: 10px 0px 5px 15px;
+}
+
+
+/**/
+
+
+#talkbubble {
+    width: 260px;
+    height: 80px;
+    background: rgba(226, 218, 218, 0.24);
+    color: #666464;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 20px;
+
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+#talkbubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+
+    border-top: 13px solid transparent;
+    border-right: 26px solid rgba(226, 218, 218, 0.42);;
+    border-bottom: 13px solid transparent;
+}
+
+
+/*                           #chat {*/
+/*    */
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: left;*/
+/*    grid-area: chat-form;*/
+/*    background: rgba(255, 255, 255, 0.8);*/
+/*    border-radius: 10px 2px 2px  15px;*/
+/*    border: 1px solid #c7c7c7;*/
+/*    width:300px;*/
+/*    padding-top: 10px;*/
+/*    padding-bottom: 10px;*/
+/*color: black;*/
+/*    padding-left: 50px;*/
+/*    padding-right: 22px;*/
+
+/*}*/
+
+.one {
+    flex: 1;
+    padding-left: 0px;
+}
+
+.two {
+    flex: 2
+}
+
+
+/*.icons {*/
+/*    flex: 2;*/
+/*}*/
+
+
+/*///ava- post//*/
+
+.avatar {
+    width: 56px;
+    height: 56px;
+}
+
+
+@media (max-width: 500px) {
+    #talkbubble {
+        width: 70%;
+        height: 70%;
+    }
+
+    .item img {
+        width: 70%;
+        height: 70%;
+        border-radius: 5px;
+    }
+
+    #talkbubble:before {
+        display: none;
+    }
+
+
+
+    span,h4 {
+        font-size: 70%;
+    }
+
+    .two {
+        text-align: center;
+    }
+
+    .logo {
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
+@media (max-width: 280px) {
+    #talkbubble {
+        flex-direction: column;
+    }
+
+
+    .item img {
+        width: 50%;
+        height: 50%;
+        border-radius: 5px;
+    }
+
+
+    span,h4 {
+        font-size: 50%;
+    }
+
+    .two {
+        text-align: center;
+    }
+
+    .logo {
+        width: 8px;
+        height: 8px;
+    }
+
+}

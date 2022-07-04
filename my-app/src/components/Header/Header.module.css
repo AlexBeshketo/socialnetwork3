@@ -1,0 +1,22 @@
+.header {
+    position:relative;
+    grid-area: header;
+    background-color: #ffffff;
+    border-bottom: rgba(9, 9, 9, 0.06) 1px solid;
+
+}
+.header img {
+    width: 110px;
+    height: auto;
+    background-size: contain;
+}
+
+.login_absolute {
+
+}
+
+.login{
+    position:absolute;
+    top: 20px;
+    right: 20px;
+}
